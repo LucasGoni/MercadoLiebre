@@ -1,0 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #eac926;
+}
+
+.header-bar {
+  display: flex;
+  position: relative;
+  padding: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  width: 42vw;
+}
+
+.search {
+  position: relative;
+}
+
+#input-search {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  width: 40vw;
+}
+
+#button-search {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background: white;
+  border: white;
+  padding: 4px;
+  color: #666;
+}
+
+.copy-header {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-top: 1.5em;
+}
+
+.contenedor-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  width: 32px;
+  border-radius: 4px;
+  padding: 0.6em 1.4em;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #03264c;
+  padding: 0 0.5em;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#banner {
+  max-width: 100%;
+}
+
+.dn {
+  display: none;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
+legend {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.main-form {
+  background-color: #ebebeb;
+  padding: 2em;
+  margin: 0.25rem;
+  display: flex;
+}
+
+.fr {
+  width: 95vw;
+}
+
+form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin-bottom: 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-usuario {
+  display: flex;
+  justify-content: space-around;
+}
+
+span label {
+  font-weight: bold;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+}
+
+.categorias label {
+  padding-bottom: 1em;
+  font-size: 12px;
+}
+
+form fieldset input {
+  flex: 1 0 auto;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.clave {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.t-input {
+  padding-right: 2em;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.botones {
+  justify-content: space-around;
+}
+.btn {
+  background-color: #1259c3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: white;
+}
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.caja-footer {
+  text-align: center;
+}
+
+.copy-footer {
+  color: #666;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.icons-footer i {
+  font-size: 2em;
+  color: #1259c3;
+  margin-bottom: 10px;
+  margin-top: 1.5em;
+}
+
+.c-footer {
+  text-align: left;
+  padding-top: 1.6em;
+  font-size: 12px;
+}
+
+#txt-footer {
+  color: #666;
+  font-size: 12px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  #logo {
+    width: 22vw;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-form {
+    margin: 1.125rem auto 1.125rem;
+    padding: 2rem 4rem;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1em;
+    padding-bottom: 1em;
+  }
+
+  .nav-bar a {
+    margin-right: 0.6em;
+  }
+
+  .contenedor-footer {
+    align-items: center;
+  }
+
+  .copy-footer {
+    color: #666;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .icons-footer:hover i {
+    color: #eac926;
+  }
+}
+
+@media (min-width: 1280px) {
+  #logo {
+    width: 22vw;
+  }
+
+  .header-bar {
+    padding: 2em;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .input-search {
+    width: 180px;
+    padding: 2px;
+    border: solid 1px #666;
+    border-radius: 4px;
+  }
+
+  .button-search {
+    padding: 2px;
+    right: -22px;
+    border: solid 1px #666;
+    border-radius: 4px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-bar a {
+    margin-right: 0.6em;
+  }
+
+  .contenedor-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
